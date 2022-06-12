@@ -1,8 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:  monospace;
+    background: #e7c694;
+}
+.row{
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    background: #f2f2f2;
+    width: 1000px;
+    border-radius: 7px;
+}
+#reader{
+    width:500px;
+}
 .result{
-    background-color: green;
+    background-color: #9c8665;
     color:#fff;
     padding:20px;
   }
-  .row{
-    display:flex;
-  }
+@media only screen and (max-width:1000px) {
+    .row{
+        margin: 100px auto;
+        display: flex;
+        min-height: 450px;
+        background: #f2f2f2;
+        width: 700px;
+        border-radius: 7px;
+    }
+    #reader{
+        width:330px;
+    }
+}
+@media only screen and (max-width:880px) {
+    .row{
+        margin-top: 100px ;
+        display: flex;
+        min-height: 450px;
+        background: #f2f2f2;
+        width: 600px;
+        border-radius: 7px;
+    }
+    #reader{
+        width:300px;
+    }
+    .result{
+        background-color: #9c8665;
+        color:#fff;
+        padding:20px;
+        font-size: 10px;
+      }
+}
+@media only screen and (max-width:680px) {
+    .row{
+        margin-top: 90px ;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 550px;
+        background: #f2f2f2;
+        width: 500px;
+        border-radius: 7px;
+    }
+    #reader{
+        width:300px;
+    }
+    .result{
+        background-color: #9c8665;
+        color:#fff;
+        padding:20px;
+        font-size: 10px;
+      }
+}
+@media only screen and (max-width:500px) {
+    .row{
+        margin-top: 90px ;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 550px;
+        background: #f2f2f2;
+        width: 400px;
+        border-radius: 7px;
+    }
+    #reader{
+        width:300px;
+    }
+    .result{
+        background-color: #9c8665;
+        color:#fff;
+        padding:20px;
+        font-size: 10px;
+      }
+}
+@media only screen and (max-width:450px) {
+    .row{
+        margin-top: 90px ;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 550px;
+        background: #f2f2f2;
+        width: 320px;
+        border-radius: 7px;
+    }
+    #reader{
+        height: 420px;
+        width:300px;
+    }
+    .result{
+        background-color: #9c8665;
+        color:#fff;
+        padding:20px;
+        font-size: 10px;
+      }
+}
+

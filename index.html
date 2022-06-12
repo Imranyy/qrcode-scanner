@@ -11,7 +11,7 @@
 <body>
     <div class="row">
     <div class="col">
-        <div style="width:500px;" id="reader"></div>
+        <div id="reader"></div>
     </div>
     <div class="col" style="padding:30px;">
         <h4>SCAN RESULT</h4>
@@ -27,7 +27,7 @@
     }
 
     function onScanError(errorMessage) {
-    //handle scan error
+     document.getElementById('result').innnerHTML='<span class="result">'+errorMessage+'</span>';
     }
 
     var html5QrcodeScanner = new Html5QrcodeScanner(
